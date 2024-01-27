@@ -1,5 +1,12 @@
 <?php
-function showAuth($activate) {
+/*
+ * Fonction pour afficher la page d'authenfication et pour gérer les information des formulaires de connexion et d'inscription
+ * 
+ * @param string $activate
+ * 
+ * @return void
+*/
+function showAuth(string $activate): void {
     global $base_url;
     global $isConnected;
 

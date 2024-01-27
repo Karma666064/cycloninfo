@@ -1,4 +1,8 @@
 <?php
+/*
+ * Fichier qui gere le routage des pages
+*/
+
 require_once('autoload.php');
 
 if (isset($_GET['page'])) {

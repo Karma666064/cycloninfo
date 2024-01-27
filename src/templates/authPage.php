@@ -1,11 +1,15 @@
 <?php
-function authPage($activate) {
+/*
+ * Fonction contenant le html de la page Authentification
+ * 
+ * @param string $activate Contient le mot "login" ou "register" pour définir quel formulaire afficher
+*/
+function authPage(string $activate): void {
     global $baseUrl;
     $title = 'Authentification';
 
     ob_start();
 ?>
-        
     <main id="main" class="<?= $activate ?>-active">
         <h1>Page d'authentification !</h1>
 

@@ -1,5 +1,10 @@
 <?php
-function homePage() {
+/*
+ * Fonction contenant le html de la page Accueil
+ * 
+ * return void
+*/
+function homePage(): void {
     global $isConnected;
     $title = 'Accueil';
 

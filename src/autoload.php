@@ -1,4 +1,8 @@
 <?php
+/*
+ * Ce fichier permet de charger tous les fichiers du dossier src et définier les variables globeaux
+*/
+
 session_start();
 
 global $baseUrl; $baseUrl = 'http://localhost/cycloninfo/src';  

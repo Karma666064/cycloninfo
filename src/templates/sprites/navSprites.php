@@ -1,4 +1,10 @@
-<?php function navSprite() { global $baseUrl; ob_start(); ?>
+<?php
+/*
+ * Fonction contenant le html de la bar de navigation
+ * 
+ * @return string | false
+*/
+function navSprite(): string|false { global $baseUrl; ob_start(); ?>
     <nav>
         <ul>
             <li><a href="<?= $baseUrl ?>">Accueil</a></li>

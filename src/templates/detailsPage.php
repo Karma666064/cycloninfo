@@ -1,5 +1,10 @@
 <?php
-function detailsPage() {
+/*
+ * Fonction contenant le html de la page Détails
+ * 
+ * return void
+*/
+function detailsPage(): void {
     $title = 'Détails du Cyclone';
 
     ob_start();

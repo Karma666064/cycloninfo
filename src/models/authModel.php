@@ -1,5 +1,13 @@
 <?php
-function login ($username, $password): bool {
+/*
+ * Fonction de connexion pour un utilisateur
+ * 
+ * @param string $username
+ * @param string $password
+ * 
+ * @return bool
+*/
+function login (string $username, string $password): bool {
     global $pdo;
 
     try {
@@ -17,7 +25,17 @@ function login ($username, $password): bool {
     } catch (PDOException $e) { echo($e); return false; }
 }
 
-function register ($username, $pseudonyme, $mail, $password): bool {
+/*
+ * Fonction d'inscription pour un utilisateur
+ * 
+ * @param string $username
+ * @param string $pseudonyme
+ * @param string $mail
+ * @param string $password
+ * 
+ * @return bool
+*/
+function register (string $username, string $pseudonyme, string $mail, string $password): bool {
     global $pdo;
 
     try {
@@ -37,6 +55,11 @@ function register ($username, $pseudonyme, $mail, $password): bool {
     } catch (PDOException $e) { echo($e); return false; }
 }
 
+/*
+ * Fonction de déconnexion pour un utilisateur
+ * 
+ * @return void
+*/
 function logout (): void {
     global $base_url;
     session_destroy();

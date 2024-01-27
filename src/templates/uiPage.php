@@ -1,5 +1,10 @@
 <?php
-function uiPage() {
+/*
+ * Fonction contenant le html de la page Interface utilisateur
+ * 
+ * return void
+*/
+function uiPage(): void {
     $title = 'Interface Utilisateur';
 
     ob_start();
